@@ -1,0 +1,33 @@
+﻿Aktueller Testfall/Szenario (analog zu Cariad Testing, Matthias Scharrer):
+
+1 Einsammeln und Upload VC aus PAG Testrack in VC Port (ORUnext Backend Cariad), alternativ manueller VC-Upload
+
+2 Abholen VC zur Updateberechung durch PAG Use Case (Simon Schweizer, datona/FIE4)
+
+3 Erstellung und Freigabe einer Test-Baseline (Andreas Dietze, EGI)
+
+4 Anlage und Start einer Kampagne im PAG Orchestrator für Testrack
+
+5 Updateberechnung im PAG Orchestrator auf Basis von Baseline, VC und weitere relevanter Eingabedaten (SDB in datona/PCDS eingebunden)
+
+6 Bereitstellung Updatepaket (Vehicle Manifest, Conf Manifest + Flashdaten, HMI Texte etc.)
+
+7 Erstellung Service Manifest und Notifizierung des Fahrzeug (ORUnext Backend)
+
+8 Download Updatepaket in HCP5
+
+9 Bestätigung "Update durchführen" in HMI
+
+10 Update durchführen (erleben der HMI Customer Journey)
+
+11 Update Result an ORU Backend und weiter zu PAG Orchestrator übertragen
+
+ 
+
+Für Schritt 7 benötigen wir Vehicle Manifeste welche bspw. zu VR15 wirklich ausführbar. Aktuell testen wir wie Matthias oder Magnus HCP5 Eigenupdates mit VR13 SW-Ständen (G31x). Interessant wären VMs die neben Eigenupdates auch Zielsteuergeräte unterhalb HCP5 enthalten (z.B. ELVIS) oder HCP3 Updates.
+
+Wir sind natürlich die berichteten Blocker im Rahmen des Durchstich Daily bekannt, ich denke ihr testet (wenn auch nicht auf dem ORU Weg) aber mit anderen/weiteren Testdaten als Matthias.
+
+ 
+
+Unterm Strich wollen wir die Testracks zeitnah auf VR15 hochziehen und brauchen entsprechende Testdaten. Lass mich wissen ob es Sinn macht eine kurz Abstimmung einzustellen!?
